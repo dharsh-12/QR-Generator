@@ -7,23 +7,22 @@
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 
-
 ## Introduction
-The **QR Generator** is a web-based application that allows users to generate QR codes for URLs, text, or other types of data. It's a simple, user-friendly tool designed to quickly create QR codes that can be used for personal or professional purposes.
+The **QR Generator** is a simple Node.js application that allows users to generate a QR code from a URL. The application also saves the QR code image and the entered URL into files for easy access. This project is perfect for those looking to quickly generate QR codes for personal or professional use.
 
 ## Features
-- Generate QR codes for URLs, text, and other data.
-- Download QR codes in various formats (e.g., PNG, SVG).
-- Customize QR code size and error correction levels.
-- Responsive design for mobile and desktop devices.
+- Prompt users to input a URL.
+- Generate a QR code from the provided URL.
+- Save the generated QR code as an image file.
+- Save the entered URL in a text file.
 
 ## Installation
-To run the QR Generator locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/qr-generator.git
    cd qr-generator
+
 2. **Install dependencies:**
      ```bash
        npm install
@@ -31,12 +30,12 @@ To run the QR Generator locally, follow these steps:
     ```bash
      npm start
 ## Usage
-1. Open your browser and go to http://localhost:3000.
-2. Enter the data you want to convert into a QR code.
-3. Click "Generate QR Code."
-4. Download the QR code by clicking the download button.
-
+1. Run the application using npm start.
+2. You will be prompted to enter a URL.
+3. The application will generate a QR code image (qr_img.png) from the URL.
+4. The entered URL will also be saved in a text file (URL.txt).
 ## Technologies Used
-- **Frontend**: HTML, CSS, JavaScript, React
-- **Backend**: Node.js, Express
-- **QR Code Generation**: QR Code library (e.g., qrcode for Node.js)
+- **Node.js:** JavaScript runtime for server-side scripting.
+- **Inquirer:** For prompting user input in the command line.
+- **QR-Image:** For generating QR code images.
+- **File System (fs):** For writing the QR code image and URL to files.
