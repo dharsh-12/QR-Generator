@@ -20,7 +20,8 @@ The **QR Generator** is a simple Node.js application that allows users to genera
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/dharsh-12/QR-Generator/tree/main/2.4%20QR%20Code%20Project
+   git clone https://github.com/dharsh-12/QR-Generator.git
+```bash
    cd qr-generator
 
 2. **Install dependencies:**
